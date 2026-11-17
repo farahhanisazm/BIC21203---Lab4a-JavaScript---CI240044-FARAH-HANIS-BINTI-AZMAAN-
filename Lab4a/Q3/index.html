@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4a - Question 3</title>
+
+    <script src="script.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #eff6ff, #bfdbfe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 50px 45px;
+            border-radius: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 480px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            border: 2px solid #bfdbfe;
+        }
+
+        h1 {
+            color: #222222;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #527ba8;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        #generateBtn {
+            background-color: #222222;
+            color: #ffffff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        #generateBtn:hover {
+            background-color: #93c5fd;
+            color: #222222;
+            transform: scale(1.03);
+        }
+
+        #generateBtn:active {
+            transform: scale(0.98);
+        }
+
+        #numberList {
+            margin-top: 25px;
+            text-align: left;
+            list-style-position: inside;
+        }
+
+        #numberList li {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            color: #222222;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Lab 4a | Question 3</h1>
+
+
+        <p class="subtitle">
+            Lab 4a | Dynamic Number Generator 
+        </p>
+
+        <button id="generateBtn" type="button">
+            Generate
+        </button>
+
+        <ol id="numberList" aria-live="polite"></ol>
+
+        <p class="footer">
+            BIC21203 Web Development <br><br> CI240044 Farah Hanis Binti Azaman
+        </p>
+
+    </div>
+
+</body>
+</html>

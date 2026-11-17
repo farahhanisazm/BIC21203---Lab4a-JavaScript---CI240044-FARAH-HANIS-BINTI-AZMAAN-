@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4a - Question 2</title>
+
+    <script src="script.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f0ff, #d8b4fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 50px 45px;
+            border-radius: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 480px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            border: 2px solid #d8b4fe;
+        }
+
+        h1 {
+            color: #222222;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #8055a8;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            color: #222222;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        #userInput {
+            width: 100%;
+            padding: 14px;
+            background-color: #f5f0ff;
+            border: 1px solid #d8b4fe;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #222222;
+            outline: none;
+            margin-bottom: 20px;
+        }
+
+        #userInput:focus {
+            border-color: #a777d4;
+            box-shadow: 0 0 0 3px rgba(167, 119, 212, 0.15);
+        }
+
+        #checkBtn {
+            background-color: #222222;
+            color: #ffffff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        #checkBtn:hover {
+            background-color: #a777d4;
+            color: #222222;
+            transform: scale(1.03);
+        }
+
+        #checkBtn:active {
+            transform: scale(0.98);
+        }
+
+        #result {
+            background-color: #f5f0ff;
+            border: 1px solid #d8b4fe;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+            color: #222222;
+            font-size: 16px;
+            font-weight: 500;
+            min-height: 65px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Lab 4a | Question 2</h1>
+
+        <p class="subtitle">
+            Lab 4a | Smart Number Validator 
+        </p>
+
+        <label for="userInput">Enter a number:</label>
+
+        <input type="text" id="userInput"
+               placeholder="Enter a number">
+
+        <button id="checkBtn" type="button">
+            Check
+        </button>
+
+        <p id="result" role="status" aria-live="polite"></p>
+
+        <p class="footer">
+            BIC21203 Web Development <br><br> CI240044 Farah Hanis Binti Azaman
+        </p>
+
+    </div>
+
+</body>
+</html>
